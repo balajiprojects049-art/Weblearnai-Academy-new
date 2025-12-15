@@ -195,16 +195,14 @@ export default function InstructorsPage() {
                                                 <MessageCircle className="w-3 h-3 mr-2" />
                                                 Contact
                                             </Button>
-                                            <Button
-                                                size="sm"
-                                                variant="outline"
-                                                asChild
-                                                className="border-slate-300 hover:bg-slate-50"
+                                            <a
+                                                href={instructor.linkedin}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-slate-300 bg-background hover:bg-slate-50 h-9 px-3"
                                             >
-                                                <a href={instructor.linkedin} target="_blank" rel="noopener noreferrer">
-                                                    <Linkedin className="w-3 h-3" />
-                                                </a>
-                                            </Button>
+                                                <Linkedin className="w-3 h-3" />
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

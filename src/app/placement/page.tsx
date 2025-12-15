@@ -220,16 +220,15 @@ export default function PlacementPage() {
                                 <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
                                     Join Weblearnai Trainings and get access to our comprehensive placement support with guaranteed interview opportunities
                                 </p>
-                                <Button
-                                    size="lg"
-                                    className="bg-white text-green-600 hover:bg-gray-100 font-bold h-14 px-10 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
-                                    asChild
-                                >
-                                    <Link href="/contact">
+                                <Link href="/contact">
+                                    <Button
+                                        size="lg"
+                                        className="bg-white text-green-600 hover:bg-gray-100 font-bold h-14 px-10 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+                                    >
                                         Apply Now
                                         <ArrowRight className="ml-2 w-5 h-5" />
-                                    </Link>
-                                </Button>
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </motion.div>

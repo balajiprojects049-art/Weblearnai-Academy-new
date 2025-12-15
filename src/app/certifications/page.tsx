@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Award, Cloud, Shield, BarChart, Briefcase, CheckCircle2, TrendingUp, Target, ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 const certificationCategories = [
     {
@@ -217,16 +218,15 @@ export default function CertificationsPage() {
                                 <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
                                     Join our certification preparation programs with expert guidance, practice tests, and guaranteed success
                                 </p>
-                                <Button
-                                    size="lg"
-                                    className="bg-white text-orange-600 hover:bg-gray-100 font-bold h-14 px-10 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
-                                    asChild
-                                >
-                                    <a href="/contact">
+                                <Link href="/contact">
+                                    <Button
+                                        size="lg"
+                                        className="bg-white text-orange-600 hover:bg-gray-100 font-bold h-14 px-10 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+                                    >
                                         Enroll Now
                                         <ArrowRight className="ml-2 w-5 h-5" />
-                                    </a>
-                                </Button>
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </motion.div>

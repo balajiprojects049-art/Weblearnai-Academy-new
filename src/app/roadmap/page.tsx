@@ -227,26 +227,24 @@ export default function RoadmapPage() {
                                     Join thousands of successful students who have transformed their careers with Weblearnai Trainings' structured learning path
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <Button
-                                        size="lg"
-                                        className="bg-white text-purple-600 hover:bg-gray-100 font-bold h-14 px-10 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
-                                        asChild
-                                    >
-                                        <Link href="/contact">
+                                    <Link href="/contact">
+                                        <Button
+                                            size="lg"
+                                            className="bg-white text-purple-600 hover:bg-gray-100 font-bold h-14 px-10 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
+                                        >
                                             Apply Now
                                             <ArrowRight className="ml-2 w-5 h-5" />
-                                        </Link>
-                                    </Button>
-                                    <Button
-                                        size="lg"
-                                        variant="outline"
-                                        className="bg-transparent border-2 border-white text-white hover:bg-white/10 font-bold h-14 px-10 rounded-full"
-                                        asChild
-                                    >
-                                        <Link href="/courses">
+                                        </Button>
+                                    </Link>
+                                    <Link href="/courses">
+                                        <Button
+                                            size="lg"
+                                            variant="outline"
+                                            className="bg-transparent border-2 border-white text-white hover:bg-white/10 font-bold h-14 px-10 rounded-full"
+                                        >
                                             View Courses
-                                        </Link>
-                                    </Button>
+                                        </Button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
